@@ -1,0 +1,9 @@
+<div class="pt-44 px-56 w-100">
+  <h2 class="text-4xl text-center">+800 <strong>Pokémons</strong> for you to choose your favorite</h2>
+
+  <input type="text" class="bg-gray w-full py-4 px-8 rounded-full mt-20 shadow-2xl outline-none" placeholder="Encontre seu Pokémon">
+
+  <div class="grid grid-cols-3 my-20 gap-4">
+    <app-pokemon-card *ngFor="let pokemon of pokemons" pokemonUrl="{{pokemon.url}}"></app-pokemon-card>
+  </div>
+</div>

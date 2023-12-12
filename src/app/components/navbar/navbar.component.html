@@ -1,0 +1,8 @@
+<div class="flex py-4 px-6 bg-yellow_primary justify-around items-center shadow-2xl fixed w-full">
+  <img src="../../../assets/images/pokemon-logo.svg" alt="pokemon-logo">
+
+
+  <a href="/" [ngClass]="{'border-b-2 py-1': isRouteActive('/')}" >Home</a>
+  <a href="/pokedex" [ngClass]="{'border-b-2 py-1': isRouteActive('/pokedex')}">Pokédex</a>
+  <a href="/my-pokemons" [ngClass]="{'border-b-2 py-1': isRouteActive('/my-pokemons')}">My Pokémons</a>
+</div>
