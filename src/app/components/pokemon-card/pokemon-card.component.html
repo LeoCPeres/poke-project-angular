@@ -1,4 +1,4 @@
-<div class="w-100 rounded-lg bg-gray flex max-h-48 cursor-pointer">
+<div class="w-100 rounded-lg bg-gray flex max-h-48 cursor-pointer card-hover">
   <div class="flex flex-col gap-3 pl-6 py-3 w-48 ">
     <h4 class="capitalize text-h2-black text-2xl font-bold">{{pokemon.name}}</h4>
 
@@ -19,7 +19,7 @@
     </div>
 
     <div class="flex gap-2 min-w-full">
-      <span *ngFor="let type of pokemon.types" class="bg-{{type.type.name}} p-1 px-2 rounded-full capitalize">{{type.type.name}}</span>
+      <span *ngFor="let type of pokemon.types" class="bg-{{type?.type?.name}} p-1 px-2 rounded-full capitalize">{{type?.type?.name}}</span>
     </div>
     
   </div>

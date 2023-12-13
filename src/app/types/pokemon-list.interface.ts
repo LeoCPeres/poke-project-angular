@@ -10,3 +10,7 @@ export type PokemonResultProps = {
   name: string;
   url: string;
 };
+
+export type PokemonSearchProps = {
+  forms: PokemonResultProps[];
+};

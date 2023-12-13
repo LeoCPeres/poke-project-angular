@@ -23,9 +23,9 @@ export class PokemonCardComponent implements OnInit {
       this.pokemon = pokemon;
 
       this.pokemonAttack =
-        pokemon.stats.find((x) => x.stat.name === 'attack')?.base_stat || 0;
+        pokemon?.stats?.find((x) => x.stat.name === 'attack')?.base_stat || 0;
       this.pokemonDefense =
-        pokemon.stats.find((x) => x.stat.name === 'defense')?.base_stat || 0;
+        pokemon?.stats?.find((x) => x.stat.name === 'defense')?.base_stat || 0;
     });
   }
 }
